@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54f9777c-a7f2-47ae-a57c-4c4c85723d6a" name="Changes" comment="" />
+    <list default="true" id="54f9777c-a7f2-47ae-a57c-4c4c85723d6a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/authentication/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transaction/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/authentication/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/transaction/build.gradle" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +40,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="SOFT" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -57,13 +65,19 @@
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17 (2)",
-    "last_opened_file_path": "/Users/seavus/test_task/testtask",
+    "last_opened_file_path": "/Users/seavus/test_task/testtask/authentication",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "spring.configuration.checksum": "10e32dcd43fa1a1851e3379b4e1dd57e"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/authentication" />
+    </key>
+  </component>
   <component name="RunManager" selected="Spring Boot.AuthenticationApplication">
     <configuration name="AuthenticationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="authentication.main" />
@@ -89,6 +103,7 @@
       <option name="presentableId" value="Default" />
       <updated>1694451364465</updated>
       <workItem from="1694451366555" duration="9027000" />
+      <workItem from="1694461387385" duration="1979000" />
     </task>
     <task id="LOCAL-00001" summary="Initial setup and basic code">
       <created>1694460718988</created>
@@ -97,7 +112,21 @@
       <option name="project" value="LOCAL" />
       <updated>1694460718988</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initial setup and basic code">
+      <created>1694461425664</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1694461425664</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Initial setup and basic code">
+      <created>1694461538384</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1694461538384</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,6 +134,17 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="application.yml" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial setup and basic code" />

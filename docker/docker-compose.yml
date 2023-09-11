@@ -1,0 +1,19 @@
+version: '3.4'
+services:
+  authentication:
+    build:
+      context: ../authentication
+      dockerfile: Dockerfile
+    restart: always
+
+  transaction-database:
+    image: mysql:8.1-oracle
+    restart: always
+
+  transaction:
+    build:
+      context: ../transaction
+      dockerfile: Dockerfile
+    depends_on:
+      - transaction-database
+    restart: always
