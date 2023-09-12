@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54f9777c-a7f2-47ae-a57c-4c4c85723d6a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/authentication/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transaction/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/authentication/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/transaction/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication/src/main/java/com/task/testtask/authentication/service/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication/src/main/java/com/task/testtask/authentication/service/AuthenticationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction/src/main/java/com/task/testtask/transaction/repository/TransactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction/src/main/java/com/task/testtask/transaction/repository/TransactionRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,16 +27,41 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="SOFT" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/.gitignore" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/authentication/Dockerfile" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/authentication/build.gradle" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/authentication/src/main/java/com/task/testtask/authentication/dto/TransactionDTO.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/authentication/src/main/java/com/task/testtask/authentication/service/AuthenticationService.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/authentication/src/main/resources/application.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/build.gradle" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/docker/docker-compose.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/transaction/Dockerfile" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/transaction/build.gradle" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -54,31 +75,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelOrder2": "2",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RequestMappingsPanelWidth2": "75",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "17 (2)",
-    "last_opened_file_path": "/Users/seavus/test_task/testtask/authentication",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "spring.configuration.checksum": "10e32dcd43fa1a1851e3379b4e1dd57e"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelOrder2&quot;: &quot;2&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth2&quot;: &quot;75&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17 (2)&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/seavus/test_task/testtask/authentication&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;10e32dcd43fa1a1851e3379b4e1dd57e&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/authentication" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.AuthenticationApplication">
+  <component name="RunManager" selected="Spring Boot.TransactionApplication">
     <configuration name="AuthenticationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="authentication.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.task.testtask.authentication.AuthenticationApplication" />
@@ -103,7 +124,10 @@
       <option name="presentableId" value="Default" />
       <updated>1694451364465</updated>
       <workItem from="1694451366555" duration="9027000" />
-      <workItem from="1694461387385" duration="1979000" />
+      <workItem from="1694461387385" duration="2261000" />
+      <workItem from="1694501700103" duration="829000" />
+      <workItem from="1694542001954" duration="180000" />
+      <workItem from="1694542190360" duration="5980000" />
     </task>
     <task id="LOCAL-00001" summary="Initial setup and basic code">
       <created>1694460718988</created>
@@ -126,7 +150,21 @@
       <option name="project" value="LOCAL" />
       <updated>1694461538384</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added docker configurations">
+      <created>1694463646550</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1694463646550</updated>
+    </task>
+    <task id="LOCAL-00005" summary="CRUD operations are added">
+      <created>1694548422949</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1694548422949</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +186,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial setup and basic code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial setup and basic code" />
+    <MESSAGE value="Added docker configurations" />
+    <MESSAGE value="CRUD operations are added" />
+    <option name="LAST_COMMIT_MESSAGE" value="CRUD operations are added" />
   </component>
 </project>

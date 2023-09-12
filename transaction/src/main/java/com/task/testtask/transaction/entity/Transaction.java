@@ -19,18 +19,22 @@ import java.util.Map;
 public class Transaction {
 
     @Id
+    @Column(name = "id")
     private int id;
 
+    @Column(name = "created_at", nullable = false)
     private Instant createdAt;
 
+    @Column(name = "type", nullable = false)
     private String type;
 
+    @Column(name = "actor", nullable = false)
     private String actor;
 
     @ElementCollection
     @CollectionTable(name = "transaction_data",
             joinColumns = {@JoinColumn(name = "data_id", referencedColumnName = "id")})
-    @MapKeyColumn(name = "data_name")
-    @Column(name = "data_value")
+    @MapKeyColumn(name = "data_name", nullable = false)
+    @Column(name = "data_value", nullable = false)
     private Map<String, String> data;
 }

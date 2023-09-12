@@ -9,8 +9,6 @@ import org.springframework.web.client.RestTemplate;
 import java.time.Instant;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 @Service
 public class AuthenticationService {
@@ -26,7 +24,7 @@ public class AuthenticationService {
 
     @PostConstruct
     public void init() throws InterruptedException {
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 40; i++) {
             TransactionDTO transactionDTO = new TransactionDTO();
             transactionDTO.setId(i);
             transactionDTO.setCreatedAt(Instant.now());
