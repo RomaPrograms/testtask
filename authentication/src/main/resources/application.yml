@@ -1,2 +1,5 @@
 server:
   port: 8081
+
+transaction-service:
+  url: ${TRANSACTION_SERVICE_URL:http://localhost:8080/transactions}

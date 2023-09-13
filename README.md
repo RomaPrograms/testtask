@@ -15,3 +15,8 @@ Implement it as a Spring application using MySQL database.
 
 
 This service can be tested by swagger: http://localhost:8080/swagger-ui/index.html
+
+### What can be added:
+ 1. Transactions table columns can be updated depending on requirements.
+ 2. More tests can be added.
+ 3. For future table structure updates can be added flyway.

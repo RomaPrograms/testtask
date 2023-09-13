@@ -5,8 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54f9777c-a7f2-47ae-a57c-4c4c85723d6a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/authentication/src/main/java/com/task/testtask/authentication/controller/AuthenticationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/authentication/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication/src/main/java/com/task/testtask/authentication/dto/TransactionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication/src/main/java/com/task/testtask/authentication/dto/TransactionDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authentication/src/main/java/com/task/testtask/authentication/service/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication/src/main/java/com/task/testtask/authentication/service/AuthenticationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authentication/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/authentication/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction/src/main/java/com/task/testtask/transaction/entity/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction/src/main/java/com/task/testtask/transaction/entity/Transaction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transaction/src/main/java/com/task/testtask/transaction/repository/TransactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction/src/main/java/com/task/testtask/transaction/repository/TransactionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/transaction/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +43,12 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="authentication" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -42,8 +58,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -55,7 +71,6 @@
     <setting file="file://$PROJECT_DIR$/.gitignore" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/authentication/Dockerfile" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/authentication/build.gradle" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/authentication/src/main/java/com/task/testtask/authentication/dto/TransactionDTO.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/authentication/src/main/java/com/task/testtask/authentication/service/AuthenticationService.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/authentication/src/main/resources/application.yml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/build.gradle" root0="FORCE_HIGHLIGHTING" />
@@ -99,7 +114,7 @@
       <recent name="$PROJECT_DIR$/authentication" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.TransactionApplication">
+  <component name="RunManager" selected="Spring Boot.AuthenticationApplication">
     <configuration name="AuthenticationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="authentication.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.task.testtask.authentication.AuthenticationApplication" />
@@ -127,7 +142,8 @@
       <workItem from="1694461387385" duration="2261000" />
       <workItem from="1694501700103" duration="829000" />
       <workItem from="1694542001954" duration="180000" />
-      <workItem from="1694542190360" duration="5980000" />
+      <workItem from="1694542190360" duration="6641000" />
+      <workItem from="1694597440912" duration="6677000" />
     </task>
     <task id="LOCAL-00001" summary="Initial setup and basic code">
       <created>1694460718988</created>
@@ -164,7 +180,28 @@
       <option name="project" value="LOCAL" />
       <updated>1694548422949</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="CRUD operations are added">
+      <created>1694548760772</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1694548760772</updated>
+    </task>
+    <task id="LOCAL-00007" summary="CRUD operations are added">
+      <created>1694548812405</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1694548812405</updated>
+    </task>
+    <task id="LOCAL-00008" summary="CRUD operations are added">
+      <created>1694548881865</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1694548881865</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -17,3 +17,4 @@ public class TransactionDTO {
 
     Map<String, String> data;
 }
+
