@@ -12,3 +12,8 @@ spring:
     password: ${MYSQL_PASSWORD:admin_password_123}
     driver-class-name: com.mysql.cj.jdbc.Driver
 
+management:
+  endpoints:
+    web:
+      base-path: /status/transaction
+

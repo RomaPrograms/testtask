@@ -3,3 +3,8 @@ server:
 
 transaction-service:
   url: ${TRANSACTION_SERVICE_URL:http://localhost:8080/transactions}
+
+management:
+  endpoints:
+    web:
+      base-path: /status/authentication
