@@ -15,7 +15,7 @@ public class TransactionDTO {
     @NotNull(groups = {OnCreate.class})
     Integer id;
 
-    @NotNull(groups = {OnCreate.class, OnUpdate.class})
+    @NotNull(groups = {OnCreate.class})
     Instant createdAt;
 
     @NotBlank(groups = {OnCreate.class, OnUpdate.class})

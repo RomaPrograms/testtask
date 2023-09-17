@@ -4,19 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54f9777c-a7f2-47ae-a57c-4c4c85723d6a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/authentication/src/main/java/com/task/testtask/authentication/controller/AuthenticationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/.env" afterDir="false" />
+    <list default="true" id="54f9777c-a7f2-47ae-a57c-4c4c85723d6a" name="Changes" comment="Updated docker and authentication service">
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/authentication/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication/src/main/java/com/task/testtask/authentication/dto/TransactionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication/src/main/java/com/task/testtask/authentication/dto/TransactionDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication/src/main/java/com/task/testtask/authentication/service/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentication/src/main/java/com/task/testtask/authentication/service/AuthenticationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/authentication/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/.env" beforeDir="false" afterPath="$PROJECT_DIR$/docker/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction/src/main/java/com/task/testtask/transaction/entity/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction/src/main/java/com/task/testtask/transaction/entity/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transaction/src/main/java/com/task/testtask/transaction/repository/TransactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction/src/main/java/com/task/testtask/transaction/repository/TransactionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction/src/main/java/com/task/testtask/transaction/dto/TransactionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction/src/main/java/com/task/testtask/transaction/dto/TransactionDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transaction/src/main/java/com/task/testtask/transaction/service/TransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/transaction/src/main/java/com/task/testtask/transaction/service/TransactionService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transaction/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/transaction/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -143,7 +137,9 @@
       <workItem from="1694501700103" duration="829000" />
       <workItem from="1694542001954" duration="180000" />
       <workItem from="1694542190360" duration="6641000" />
-      <workItem from="1694597440912" duration="6677000" />
+      <workItem from="1694597440912" duration="10229000" />
+      <workItem from="1694804593641" duration="1875000" />
+      <workItem from="1694953501629" duration="4455000" />
     </task>
     <task id="LOCAL-00001" summary="Initial setup and basic code">
       <created>1694460718988</created>
@@ -201,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694548881865</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Updated docker and authentication service">
+      <created>1694604462958</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1694604462958</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +228,7 @@
     <MESSAGE value="Initial setup and basic code" />
     <MESSAGE value="Added docker configurations" />
     <MESSAGE value="CRUD operations are added" />
-    <option name="LAST_COMMIT_MESSAGE" value="CRUD operations are added" />
+    <MESSAGE value="Updated docker and authentication service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated docker and authentication service" />
   </component>
 </project>

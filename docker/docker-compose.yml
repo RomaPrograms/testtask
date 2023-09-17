@@ -1,22 +1,31 @@
 version: '3.4'
 services:
-#  authentication:
-#    build:
-#      context: ../authentication
-#      dockerfile: Dockerfile
-#    environment:
-#      TRANSACTION_SERVICE_URL: ${TRANSACTION_SERVICE_URL}
-#    depends_on:
-#      - transaction
-#    restart: always
+  authentication:
+    build:
+      context: ../authentication
+      dockerfile: Dockerfile
+    environment:
+      TRANSACTION_SERVICE_URL: http://transaction:8080/transactions
+    ports:
+      - 8081:8081
+    depends_on:
+      - transaction
+    restart: always
 
   transaction-database:
     image: mysql:8.1.0
     environment:
-      MYSQL_DATABASE: transactionsdb
+      MYSQL_DATABASE: transactions
       MYSQL_USER: ${MYSQL_USER}
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_TCP_PORT: ${MYSQL_DATABASE_PORT}
+    volumes:
+      - type: volume
+        source: transaction_database_data
+        target: /var/lib/mysql
+    ports:
+      - 3307:${MYSQL_DATABASE_PORT}
     restart: always
 
   transaction:
@@ -26,6 +35,13 @@ services:
     environment:
       MYSQL_USER: ${MYSQL_USER}
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_DATABASE_HOST: transaction-database
+      MYSQL_DATABASE_PORT: ${MYSQL_DATABASE_PORT}
+    ports:
+      - 8080:8080
     depends_on:
       - transaction-database
     restart: always
+
+volumes:
+  transaction_database_data:

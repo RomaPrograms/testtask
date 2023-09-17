@@ -43,3 +43,24 @@ Stransaction/src/main/java/com/task/testtask/transaction/TransactionApplication.
 Otransaction/src/main/java/com/task/testtask/transaction/dto/utils/OnUpdate.java,5/b/5bf86967622985517cfdc07be2abec67b33c44d2
 
 Otransaction/src/main/java/com/task/testtask/transaction/dto/utils/OnCreate.java,4/9/49587d41e3b0a8f5f9d53519649aef032ad5ecfc
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+è
+_transaction/src/main/java/com/task/testtask/transaction/error/exceptions/NotFoundException.java,a/5/a59591f37dd7d4c1fcaf8098213d0ac200d3179d
+{
+Ktransaction/src/main/java/com/task/testtask/transaction/error/ErrorDTO.java,9/9/99fcf82afd5d712f4afb15b730f937c6e55d864f
+â
+Ytransaction/src/main/java/com/task/testtask/transaction/error/GlobalExceptionHandler.java,9/0/9018fa539101187116cdb10489c281e65c47e70a
+I
+authentication/Dockerfile,b/e/be658a8c9a4001043598e87458f6d21b788f33bc
+<
+build.gradle,f/0/f07866736216be0ee2aba49e392191aeae700a35
+K
+authentication/build.gradle,2/8/285501d13a56cc4600ae3a5d4f873f5611aedeed
+Ö
+Uauthentication/src/main/java/com/task/testtask/authentication/dto/TransactionDTO.java,0/d/0deb377a38e5410db731f4eb07216dedb55ffd78
+9
+	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+ñ
+fauthentication/src/main/java/com/task/testtask/authentication/controller/AuthenticationController.java,1/1/11d4321467958cbca9d283dd498844380a9db94f

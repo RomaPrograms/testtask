@@ -44,8 +44,12 @@ public class TransactionService {
 
     @Transactional
     public TransactionDTO updateTransactions(int id, TransactionDTO transactionDTO) throws NotFoundException {
-        findTransactionById(id);
-        return createTransaction(transactionDTO);
+        Transaction transaction = findTransactionById(id);
+        transaction.setType(transactionDTO.getType());
+        transaction.setActor(transactionDTO.getActor());
+        transaction.setData(transactionDTO.getData());
+        transaction = transactionRepository.saveAndFlush(transaction);
+        return modelMapper.map(transaction, TransactionDTO.class);
     }
 
     @Transactional
