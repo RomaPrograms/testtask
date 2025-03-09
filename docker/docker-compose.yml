@@ -13,19 +13,17 @@ services:
     restart: always
 
   transaction-database:
-    image: mysql:8.1.0
+    image: postgres:17.4
     environment:
-      MYSQL_DATABASE: transactions
-      MYSQL_USER: ${MYSQL_USER}
-      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
-      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
-      MYSQL_TCP_PORT: ${MYSQL_DATABASE_PORT}
+      POSTGRES_DB: transactions
+      POSTGRES_USER: ${PSQL_USER}
+      POSTGRES_PASSWORD: ${PSQL_PASSWORD}
     volumes:
       - type: volume
         source: transaction_database_data
-        target: /var/lib/mysql
+        target: /var/lib/postgresql/data
     ports:
-      - 3307:${MYSQL_DATABASE_PORT}
+      - 5432:${PSQL_DATABASE_PORT}
     restart: always
 
   transaction:
@@ -33,10 +31,10 @@ services:
       context: ../transaction
       dockerfile: Dockerfile
     environment:
-      MYSQL_USER: ${MYSQL_USER}
-      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
-      MYSQL_DATABASE_HOST: transaction-database
-      MYSQL_DATABASE_PORT: ${MYSQL_DATABASE_PORT}
+      PSQL_USER: ${PSQL_USER}
+      PSQL_PASSWORD: ${PSQL_PASSWORD}
+      PSQL_DATABASE_HOST: transaction-database
+      PSQL_DATABASE_PORT: ${PSQL_DATABASE_PORT}
     ports:
       - 8080:8080
     depends_on:
