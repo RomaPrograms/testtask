@@ -4,7 +4,7 @@ import com.task.testtask.authentication.dto.TransactionDTO;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestClient;
+import org.springframework.web.reactive.function.client.WebClient;
 
 import java.time.Instant;
 import java.util.HashMap;
@@ -14,13 +14,11 @@ import java.util.concurrent.atomic.AtomicInteger;
 @Service
 public class AuthenticationService {
 
-    private final String transactionURL;
     private final AtomicInteger counter = new AtomicInteger(-1);
-    private final RestClient restClient;
+    private final WebClient webClient;
 
     public AuthenticationService(@Value("${transaction-service.url}") String transactionURL) {
-        this.transactionURL = transactionURL;
-        this.restClient = RestClient.create();
+        this.webClient = WebClient.create(transactionURL);
     }
 
     public void createTransactions(int size) throws InterruptedException {
@@ -37,12 +35,10 @@ public class AuthenticationService {
             transactionData.put("key_2_" + id, "value_2_" + id);
             transactionDTO.setData(transactionData);
 
-            restClient.post()
-                    .uri(transactionURL)
+            webClient.post()
                     .contentType(MediaType.APPLICATION_JSON)
-                    .body(transactionDTO)
-                    .retrieve()
-                    .toBodilessEntity();
+                    .bodyValue(transactionDTO)
+                    .retrieve();
 
             Thread.sleep(1000);
         }
